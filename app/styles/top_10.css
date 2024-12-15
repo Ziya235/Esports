@@ -1,0 +1,165 @@
+.top_10 {
+    background-color: #1D2432;
+    padding-bottom: 80px;
+}
+
+.top_10 .top_10_title {
+    color: #FFFFFF;
+    font-size: 29px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 23px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+
+.top_10 .top_10_title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #58FF88;
+    /* Border color */
+    border-radius: 3px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top_10_cards{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+.top_10_card {
+    border: 1px solid rgba(151, 151, 151, 0.6);
+    border-radius: 15px;
+    background-color: #181C23;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.06);
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+}
+
+.top_10_card img {
+    width: 280px;
+    height: 155px;
+    border-radius: 10px;
+}
+
+
+.top_10_up {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.top_10_right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_10_up_left .esport_spec {
+    border-radius: 6px;
+    width: 208px;
+    background-color: #58FF88;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 14px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.top_10_bottom p {
+    padding: 20px;
+    color: gray;
+}
+
+.top_10_up_left h1 {
+    font-size: 27px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+
+.top_10_up_left p {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.top_10_up_right button {
+
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    height: 51px;
+    width: 170px;
+    border-radius: 27px;
+    background-color: #E77627;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.top_10_up_right button:hover {
+    background-color: #e65b50;
+    transform: scale(1.05);
+}
+
+.top_10_up_right a{
+    text-decoration: underline;
+}
+
+@media (max-width:850px) {
+    .top_10_up{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .top_10_card{
+        margin: 0 30px;
+    }
+
+    .top_10_card img{
+        width: 100%;
+        height: auto;
+    }
+    .top_10_up_left{
+        margin-right: 100px;
+    }
+}
+
+@media (max-width:600px) {
+    .top_10_right{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top_10_up_left h1{
+        text-align: center;
+    }
+    .top_10_up_left .esport_spec{
+        margin-left: 40px;
+    }
+    .top_10_up_left{
+        margin-right: 0;
+    }
+    .top_10_up_right{
+        margin-top: 50px;
+    }
+}

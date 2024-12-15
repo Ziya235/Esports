@@ -1,0 +1,139 @@
+.game_on {
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.game_on h1 {
+    color: #FFFFFF;
+    font-size: 29px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 23px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 17px;
+    margin-bottom: 80px;
+}
+
+
+.game_on h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #58FF88;
+    /* Border color */
+    border-radius: 3px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.game_on_main {
+    display: flex;
+    gap: 40px;
+    color: white;
+}
+
+.game_on_left {
+    padding: 20px;
+}
+
+.game_on .game_on_title {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.game_on_left img {
+    height: 292px;
+    width: 551px;
+}
+
+
+.game_on_left h2 {
+    margin: 20px 0;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.game_on_left p {
+    line-height: 1.5;
+    letter-spacing: 0.5;
+    margin-top: 17px;
+    max-width: 460px;
+}
+
+.game_on_date {
+    font-size: 14px;
+}
+
+.game_on_right {
+    padding: 20px;
+}
+
+.game_on_right img {
+    width: 220px;
+    height: 120px;
+}
+
+.right_part_card {
+    display: flex;
+    gap: 14px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.right_part_card p {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.right_part_card h2 {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+@media (max-width:1024px) {
+
+    .game_on_main {
+        flex-direction: column;
+    }
+
+    .game_on_left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game_on_left p{
+        max-width: 600px;
+    }
+    .game_on_left h2{
+        
+        max-width: 600px;
+    }
+}
+
+@media (max-width:600px) {
+    .right_part_card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .game_on_right img{
+        width: 100%;
+        height: auto;
+    }
+
+    .game_on_left img{
+        width: 100%;
+        height: auto;
+    }
+   
+}

@@ -1,0 +1,141 @@
+.best_subscription {
+    background-color: #1D2432;
+}
+
+.best_subscription .best_subscription_title {
+    color: #FFFFFF;
+    font-size: 29px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 23px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+.best_subscription .best_subscription_title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #58FF88;
+    /* Border color */
+    border-radius: 3px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.best_cards {
+    padding: 70px 0;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.best_card {
+    border: 1px solid rgba(151, 151, 151, 0.6);
+    border-radius: 15px;
+    background-color: #181C23;
+    max-width: 607px;
+    color: white;
+}
+
+.best_card img {
+    width: 220px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+
+.best_card_up {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.best_card_right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best_card_up_left .esport_spec {
+    border-radius: 6px;
+    width: 208px;
+    background-color: #58FF88;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 14px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+
+
+.best_card_up_left h1 {
+    font-size: 27px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+
+
+.best_card_bottom {
+    border-top: 1px solid rgba(151, 151, 151, 0.32);
+
+}
+
+.best_card_bottom button {
+
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    height: 51px;
+    width: 170px;
+    border-radius: 27px;
+    background-color: #E77627;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+}
+
+.best_card_bottom button:hover {
+    background-color: #e65b50;
+    transform: scale(1.05);
+}
+
+@media (max-width:1200px) {
+    .best_card_up{
+        flex-direction: column;
+        align-items: center;
+    }
+    .best_card_bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:600px) {
+    .best_cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .best_card{
+        margin: 0 20px;
+    }
+    
+}

@@ -14,13 +14,12 @@ const Explore = () => {
           <p>The Ultimate eSports Watch Party Guide</p>
         </div>
         <p className="expolore_last_text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Dive deeper into the world of esports with our comprehensive guides,
+          expert advice, and exciting updates. Learn how to make the most of
+          your esports viewing experience, connect with other fans, and discover
+          new ways to enjoy competitive gaming. Whether you're a seasoned
+          enthusiast or a newcomer, we've got everything you need to stay
+          informed and entertained.
         </p>
       </div>
     </div>
